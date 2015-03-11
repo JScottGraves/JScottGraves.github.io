@@ -4,9 +4,9 @@ email: scottgrvs@hiregraves.net
 description: > # this means to ignore newlines until "baseurl:"
   JScottGraves' musings about code, math, and whatever.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://JScottGraves.github.io" # the base hostname & protocol for your site
+twitter_username: JSCodes
+github_username:  JScottGraves
 
 # Build settings
 markdown: kramdown
