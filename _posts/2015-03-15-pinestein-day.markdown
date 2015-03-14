@@ -38,11 +38,11 @@ The traveling coin would be a different color too, but that doesn't matter for o
 
 ##A Plethora of Pis
 
-As a perfect circle travels faster and faster past us, we get a different ratio for it's diameter and perimeter.  Maybe we can think about these a relativistic Pis?
+As a perfect circle travels faster and faster past us, we get a different ratio for it's diameter and perimeter.  Maybe we can think about these as relativistic Pis?
 
 Here's a graph of how these "pis" change as they go faster.
 
-<div id="pichart" style="width: 700px; height: 400px; border: 1px black solid;"></div>
+<div id="pichart" style="width: 700px; height: 400px; border: 1px black solid; border-bottom:10px;"></div>
 
 So, there you go! All the Pis you could ever want.
 
