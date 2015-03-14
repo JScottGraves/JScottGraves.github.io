@@ -42,7 +42,7 @@ As a perfect circle travels faster and faster past us, we get a different ratio 
 
 Here's a graph of how these "pis" change as they go faster.
 
-<div id="pichart" style="width: 700px; height: 400px; border: 1px black solid; border-bottom:10px;"></div>
+<div id="pichart" style="width: 700px; height: 400px; border: 1px black solid; padding-bottom:20px;"></div>
 
 So, there you go! All the Pis you could ever want.
 
