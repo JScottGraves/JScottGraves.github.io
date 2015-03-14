@@ -28,7 +28,7 @@ function LoretzContraction(LengthAtRest,RelativeVelocity){
   }
 {%endhighlight%}
 
-But, this change in diameter would only affect the direction in which the coin was traveling.  His measurement of the height of the coin would stay the same. That would make the coin look squashed along the direction it moving past Einstein.
+But, this change in diameter would only affect the direction in which the coin was traveling.  His measurement of the height of the coin would stay the same. That would make the coin look squashed along the direction it was moving past Einstein.
 
 Here's what the coin would look like in Einsteins hand vs. whizzing past his head at half the speed of light.
 
