@@ -99,10 +99,13 @@ And here is a graph of the amount of blue in the pixels on the first row of the 
 
 That's nice and smooth, but it's not noise! Now let's have a go at making a picture that's both smooth and noisy.
 
-To do that, we'll use a trick that we'll see again when we talk about Perlin Noise.  Instead of picking a random value for each and every point, we'll pick a few random values evenly spaced throughout the picture.  Let's call this arrangement of points a *grid* and each point a *grid point*.
+To do that, we'll use a trick that we'll see again when we talk about Perlin Noise.  Instead of picking a random value for each and every point, we'll pick a few random values evenly spaced throughout the picture.  Let's call this arrangement of points a *grid* and each point a *grid point*.  Then let's find a way to calculate a color at any point between these grid points.
 
+If you pick any point on the picture, it will be surrounded by grid points.  We can imagine that the colors between these points will fade smoothly from one grid point to another.  We can make the color value of our chosen point the average of the smooth fade from each of the surrounding grid points. Here's a diagram to help us make sense of that.
 
+![Linear Interpolation](/img/lerp.png)
 
+The corners of the square are the grid points surrounding whatever point we've chosen. The random value of each grid point is represented by the length of the red line.
 
 ##Perlin Noise
 

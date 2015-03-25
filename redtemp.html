@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Redirect Example</title>
+      <script language="javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script language="javascript">
+          function Redirector(source){
+            var src = source;
+
+            //update this table with source:destination mappings
+            var redirecttable =
+              {"/wsr/ofr/thisobject.pdf":"/thatobject.pdf"};
+
+            this.Redirect = function(found,notfound){
+
+              if(src == null){
+                notfound();
+                return;
+              }
+
+              var dest = redirecttable[src];
+              dest === undefined ? notfound() : found(dest);
+            }
+          }
+
+        $.urlParam = function(name){
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null){
+             return null;
+          }
+          else{
+             return results[1] || 0;
+          }
+        }
+
+      </script>
+  </head>
+  <body>
+  <p id="results"></p>
+  <script language="javascript">
+    var ref = new Redirector($.urlParam("referrer"));
+
+    ref.Redirect(
+      function(destination){$("#results").text("Redirecting to " + destination);},
+      function(){$("#results").text("Destination not found");});
+  </script>
+  </body>
+</html>
