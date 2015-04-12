@@ -20,12 +20,11 @@ How different Einstein's measurement of the coin's diameter would be is given by
 
 {%highlight javascript%}
 function LoretzContraction(LengthAtRest,RelativeVelocity){
-  function LoretzContraction(LengthAtRest,RelativeVelocity){
-    //in meters per second
-    var c = 299792458;
-    var lc = LengthAtRest * Math.sqrt(1 - (Math.pow(RelativeVelocity,2) / Math.pow(c,2)));
-    return lc;
-  }
+  //in meters per second
+  var c = 299792458;
+  var lc = LengthAtRest * Math.sqrt(1 - (Math.pow(RelativeVelocity,2) / Math.pow(c,2)));
+  return lc;
+}
 {%endhighlight%}
 
 But, this change in diameter would only affect the direction in which the coin was traveling.  His measurement of the height of the coin would stay the same. That would make the coin look squashed along the direction it was moving past Einstein.
