@@ -10,3 +10,4 @@ github_username:  JScottGraves
 
 # Build settings
 markdown: kramdown
+exclude: [node_modules, package.json, npm-debug.log, Gruntfile.js, scss]
